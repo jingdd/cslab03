@@ -1,0 +1,52 @@
+Uses Cases:              |   Affordablerent car rental
+-------------------------|-----------------------------------------------------
+Related Requirements:    | 1) Customers  should be able to search for
+                         |    the car they like
+                         | 2) Customers should be able to specify search
+                         |    criteria
+                         | 3) When search result come up, it should include
+                         |    details of the cars type and prices
+                         | 4) If the customers decide to rent the car, the
+                         |    system should ask for additional information
+                         |    of the customer, such as name, age, licence
+                         |    number etc.
+                         | 5) Net price should be calculated and show to 
+                         |    the customers.
+                         | 6) If the customer proceeds with booking, system
+                         |    should ask for credit card details for payment
+                         | 7) External credit card system should be called
+                         |    to handle payment process.
+                         | 8) If payment has been confirmed, the system 
+                         |    should sent an emial to customer confirming
+                         |    the booking.
+-------------------------|-----------------------------------------------------
+Initiating Actor:        |   Any customers
+-------------------------|-----------------------------------------------------
+Actor's Goal:            | Search for cars to rent and process to booking
+                         | if interested.   
+-------------------------|-----------------------------------------------------
+Particpating Actors:     | Data Base, external credit card system
+-------------------------|-----------------------------------------------------
+Preconditions:           | - Customers searched for a car they liked to 
+                         |   proceed with booking
+                         | - Customers give sufficent information to the
+                         |   system
+Postconditions:          | - Customers return the car in time
+-------------------------------------------------------------------------------
+Flow of Events for Main Success Scenario:
+->                         1) Customer search for the car they want
+<-                         2) Data base return result base on customer
+                              specification
+->                         3) Customer click select a they are interested
+->                         4) Customer decide the car is the one they want
+->                         5) Customer input their information
+<-                         6) System calculate the net price for given 
+                              information
+->                         7) Customer indicate wheather they want to rent
+->                         8) Customer enter credit card details
+<-                         9) System pass credit card details to credit card
+                              system
+->                        10) Credit card system handle the payment process,
+                              and return wheather payment was successful
+<-                        11) System send email to customer confirming the 
+                              booking if payment was approved.

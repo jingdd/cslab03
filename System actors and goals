@@ -1,0 +1,14 @@
+Systems actors :     
+    Customer: search cars on Affordablerental, and process to rent the car if their decided they want to rent it
+    
+    Database: Store information of the currently avaliable cars that can be rent out, store information of the customers detials, information of the rental company and the information of the cars being rented out.
+
+    Admin staff:being able to log into the system with appropriate username and password, enter new car information into the system 
+
+    Manager: being able to log into the system, able to generate weekly reports to check the status of the cars(how many cars got rent out, currently status of the rented out cars etc.)
+
+    QBEI Insurances: provide insurance services to customers
+
+    Credit card system: handle payment 
+
+    
