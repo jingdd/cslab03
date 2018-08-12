@@ -34,19 +34,19 @@ Preconditions:           | - Customers searched for a car they liked to
 Postconditions:          | - Customers return the car in time
 -------------------------------------------------------------------------------
 Flow of Events for Main Success Scenario:
-->                         1) Customer search for the car they want
-<-                         2) Data base return result base on customer
+->                      UC1   1) Customer search for the car they want
+<-                      UC1   2) Data base return result base on customer
                               specification
-->                         3) Customer click select a they are interested
-->                         4) Customer decide the car is the one they want
-->                         5) Customer input their information
-<-                         6) System calculate the net price for given 
+->                      UC1   3) Customer click select a they are interested
+->                      UC2   4) Customer decide the car is the one they want
+->                      UC2   5) Customer input their information
+<-                      UC2   6) System calculate the net price for given 
                               information
-->                         7) Customer indicate wheather they want to rent
-->                         8) Customer enter credit card details
-<-                         9) System pass credit card details to credit card
+->                      UC2   7) Customer indicate wheather they want to rent
+->                      UC4   8) Customer enter credit card details
+<-                      UC4   9) System pass credit card details to credit card
                               system
-->                        10) Credit card system handle the payment process,
+->                      UC4  10) Credit card system handle the payment process,
                               and return wheather payment was successful
-<-                        11) System send email to customer confirming the 
+<-                      UC2  11) System send email to customer confirming the 
                               booking if payment was approved.
